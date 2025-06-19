@@ -9,3 +9,29 @@
 </div>
 
 # 🚀 nexus
+
+<!-- TODO: Add repository description and image.
+
+<div align="center">
+  <img
+    src="./readme/assets/{REPOSITORY_NAME}.png"
+    style="border-radius: 10px"
+    alt="{REPOSITORY_NAME}"
+  />
+</div>
+
+-->
+
+## 📚 Table of Contents
+
+- [🚀 nexus](#-nexus)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [📌 About](#-about)
+
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
+
+## 📌 About
+
+<!-- TODO: Add a detailed about here. -->
+
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
