@@ -64,3 +64,6 @@ venv/
 $RECYCLE.BIN/
 Desktop.ini
 Thumbs.db
+
+# Others
+**/tmp/**
