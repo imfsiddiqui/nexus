@@ -1,0 +1,66 @@
+# Build and distribution
+*.egg-info/
+bin/
+build/
+dist/
+out/
+
+# Debug and runtime
+*.app
+*.dll
+*.exe
+*.out
+*.so
+
+# Editor
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw
+*.swo
+*.swp
+*~
+
+# Environment
+.env
+.env.dev
+.env.development
+.env.local
+.env.prod
+.env.production
+.env.stag
+.env.staging
+.env.test
+.env.testing
+
+# Linux
+*~
+
+# Log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac
+.AppleDouble
+.DS_Store
+.LSOverride
+
+# Node.js dependencies
+node_modules/
+
+# Python bytecode and virtual environments
+__pycache__/
+.venv/
+*.py[cod]
+*.pyd
+*.pyo
+env/
+venv/
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+Thumbs.db
