@@ -16,6 +16,8 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .background-animation {
@@ -92,12 +94,13 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  min-height: 100vh;
+  min-height: 96vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  flex: 1;
 }
 
 .main-content {
@@ -185,7 +188,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.countdown-label {
+.countdown-label-text {
   font-size: 0.9rem;
   color: var(--text-secondary);
   text-transform: uppercase;
@@ -194,14 +197,18 @@ body {
 
 .social-links {
   display: flex;
-  gap: clamp(0.5rem, 2vw, 1rem); /* Adjusts between 0.5rem and 1.0rem based on viewport */
+  gap: clamp(
+    0.5rem,
+    2vw,
+    1rem
+  );
   justify-content: center;
-  flex-wrap: wrap; /* Allows links to wrap on very small screens */
+  flex-wrap: wrap;
 }
 
 .social-link {
-  width: clamp(40px, 10vw, 50px); /* Adjusts between 40px and 50px */
-  height: clamp(40px, 10vw, 50px); /* Same as width to maintain circle */
+  width: clamp(40px, 10vw, 50px);
+  height: clamp(40px, 10vw, 50px);
   border-radius: 50%;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -212,7 +219,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  font-size: clamp(1.0rem, 3vw, 1.2rem); /* Adjusts icon size */
+  font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
 .social-link:hover {
@@ -221,32 +228,40 @@ body {
   box-shadow: 0 10px 20px var(--glow);
 }
 
+.footer {
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 540px) {
   .logo {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
 
   .title {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .countdown {
     flex-wrap: wrap;
-    gap: 1.0rem;
+    gap: 1rem;
     justify-content: center;
   }
 
   .countdown-item {
-    padding: 1.0rem 1.0rem;
+    padding: 1rem 1rem;
     min-width: 50px;
   }
 
   .countdown-number {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .countdown-label-text {
