@@ -194,13 +194,14 @@ body {
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.5rem, 2vw, 1rem); /* Adjusts between 0.5rem and 1.0rem based on viewport */
   justify-content: center;
+  flex-wrap: wrap; /* Allows links to wrap on very small screens */
 }
 
 .social-link {
-  width: 50px;
-  height: 50px;
+  width: clamp(40px, 10vw, 50px); /* Adjusts between 40px and 50px */
+  height: clamp(40px, 10vw, 50px); /* Same as width to maintain circle */
   border-radius: 50%;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -211,10 +212,44 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  font-size: clamp(1.0rem, 3vw, 1.2rem); /* Adjusts icon size */
 }
 
 .social-link:hover {
   background: var(--accent);
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 10px 20px var(--glow);
+}
+
+@media (max-width: 540px) {
+  .logo {
+    font-size: 2.0rem;
+  }
+
+  .title {
+    font-size: 2.0rem;
+  }
+
+  .subtitle {
+    font-size: 1.0rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    gap: 1.0rem;
+    justify-content: center;
+  }
+
+  .countdown-item {
+    padding: 1.0rem 1.0rem;
+    min-width: 50px;
+  }
+
+  .countdown-number {
+    font-size: 1.0rem;
+  }
+
+  .countdown-label-text {
+    display: none;
+  }
 }
