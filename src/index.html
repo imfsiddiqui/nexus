@@ -14,6 +14,7 @@
     />
     <meta name="author" content="Faizan Siddiqui" />
     <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script type="module" src="./assets/js/main.js"></script>
 
@@ -44,82 +45,119 @@
   </head>
 
   <body>
-    <div class="background-animation">
+    <div class="background-animation" aria-hidden="true">
       <div class="floating-orb orb-1"></div>
       <div class="floating-orb orb-2"></div>
       <div class="floating-orb orb-3"></div>
     </div>
 
-    <div class="theme-toggle" id="themeToggle">
-      <span id="themeIcon">🌙</span>
-    </div>
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Toggle dark/light theme"
+      type="button"
+    >
+      <span id="themeIcon" aria-hidden="true">🌙</span>
+    </button>
 
-    <div class="container">
+    <main class="container">
       <div class="main-content">
-        <div class="logo">NEXUS</div>
+        <div class="logo" aria-label="Nexus logo" role="img" tabindex="0">
+          NEXUS
+        </div>
 
-        <div class="titles">
+        <header class="titles">
           <h1 class="title">
-            🔮🪄⏳🚀🎉<br />Something Amazing Is Coming Soon
+            <span aria-hidden="true">🔮🪄⏳🚀🎉</span>
+            <br />
+            <span>Something Amazing Is Coming Soon</span>
           </h1>
-
           <h2 class="subtitle">
             Working hard to bring you an incredible experience. Stay tuned for
             the big reveal!
           </h2>
-        </div>
+        </header>
 
-        <div class="countdown" id="countdown">
+        <section
+          class="countdown"
+          id="countdown"
+          aria-label="Countdown to launch"
+          role="region"
+        >
           <div class="countdown-item">
-            <span class="countdown-number" id="days">00</span>
-            <span class="countdown-label-icon">📅</span>
+            <span
+              class="countdown-number"
+              id="days"
+              aria-live="polite"
+              aria-label="Days remaining"
+              >00</span
+            >
+            <span class="countdown-label-icon" aria-hidden="true">📅</span>
             <span class="countdown-label-text">Days</span>
           </div>
           <div class="countdown-item">
-            <span class="countdown-number" id="hours">00</span>
-            <span class="countdown-label-icon">⏰</span>
+            <span
+              class="countdown-number"
+              id="hours"
+              aria-live="polite"
+              aria-label="Hours remaining"
+              >00</span
+            >
+            <span class="countdown-label-icon" aria-hidden="true">⏰</span>
             <span class="countdown-label-text">Hours</span>
           </div>
           <div class="countdown-item">
-            <span class="countdown-number" id="minutes">00</span>
-            <span class="countdown-label-icon">⏱️</span>
+            <span
+              class="countdown-number"
+              id="minutes"
+              aria-live="polite"
+              aria-label="Minutes remaining"
+              >00</span
+            >
+            <span class="countdown-label-icon" aria-hidden="true">⏱️</span>
             <span class="countdown-label-text">Minutes</span>
           </div>
           <div class="countdown-item">
-            <span class="countdown-number" id="seconds">00</span>
-            <span class="countdown-label-icon">💨</span>
+            <span
+              class="countdown-number"
+              id="seconds"
+              aria-live="polite"
+              aria-label="Seconds remaining"
+              >00</span
+            >
+            <span class="countdown-label-icon" aria-hidden="true">💨</span>
             <span class="countdown-label-text">Seconds</span>
           </div>
-        </div>
+        </section>
 
-        <div class="social-links">
-          <a href="#" class="social-link">
-            <i class="bi bi-envelope"></i>
+        <nav class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Email" tabindex="0">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-bluesky"></i>
+          <a href="#" class="social-link" aria-label="Bluesky" tabindex="0">
+            <i class="bi bi-bluesky" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-github"></i>
+          <a href="#" class="social-link" aria-label="GitHub" tabindex="0">
+            <i class="bi bi-github" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-instagram"></i>
+          <a href="#" class="social-link" aria-label="Instagram" tabindex="0">
+            <i class="bi bi-instagram" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-linkedin"></i>
+          <a href="#" class="social-link" aria-label="LinkedIn" tabindex="0">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-mastodon"></i>
+          <a href="#" class="social-link" aria-label="Mastodon" tabindex="0">
+            <i class="bi bi-mastodon" aria-hidden="true"></i>
           </a>
-          <a href="#" class="social-link">
-            <i class="bi bi-twitter-x"></i>
+          <a href="#" class="social-link" aria-label="Twitter/X" tabindex="0">
+            <i class="bi bi-twitter-x" aria-hidden="true"></i>
           </a>
-        </div>
+        </nav>
       </div>
-    </div>
+    </main>
 
-    <div class="footer">
+    <footer class="footer" role="contentinfo">
       <p>&copy; 2025 Nexus. All rights reserved.</p>
-    </div>
+    </footer>
   </body>
 </html>
