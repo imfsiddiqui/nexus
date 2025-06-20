@@ -197,11 +197,7 @@ body {
 
 .social-links {
   display: flex;
-  gap: clamp(
-    0.5rem,
-    2vw,
-    1rem
-  );
+  gap: clamp(0.5rem, 2vw, 1rem);
   justify-content: center;
   flex-wrap: wrap;
 }
