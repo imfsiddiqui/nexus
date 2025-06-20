@@ -1,6 +1,18 @@
 // Countdown timer
 export function countdown() {
-  const targetDate = new Date("2025-12-31T00:00:00Z");
+  function setTargetDate() {
+    // Set target date (30 days from now)
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 30);
+    localStorage.setItem("targetDate", targetDate.toISOString());
+  }
+
+  if (!localStorage.getItem("targetDate")) {
+    // If no target date is set, initialize it
+    setTargetDate();
+  }
+
+  const targetDate = new Date(localStorage.getItem("targetDate"));
 
   const now = new Date().getTime();
   const distance = targetDate.getTime() - now;
@@ -27,8 +39,8 @@ export function countdown() {
     .padStart(2, "0");
 
   if (distance < 0) {
-    document.getElementById("countdown").innerHTML =
-      "<h2>✨ We are live! ✨</h2>";
+    // If countdown is over, reset target date
+    setTargetDate();
   }
 
   // Update countdown every second
