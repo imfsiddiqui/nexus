@@ -1,30 +1,38 @@
-// Countdown timer
-export function countdown() {
-  function setTargetDate() {
-    // Set target date (30 days from now)
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
-    localStorage.setItem("targetDate", targetDate.toISOString());
-  }
+// Countdown Timer Module
 
-  if (!localStorage.getItem("targetDate")) {
-    // If no target date is set, initialize it
-    setTargetDate();
-  }
+const TARGET_DATE_KEY = "targetDate";
+const DEFAULT_DAYS_FROM_NOW = 30;
+const COUNTDOWN_INTERVAL = 1000;
 
-  const targetDate = new Date(localStorage.getItem("targetDate"));
+function getTargetDate() {
+  const storedDate = localStorage.getItem(TARGET_DATE_KEY);
+  return storedDate ? new Date(storedDate) : null;
+}
 
-  const now = new Date().getTime();
+function setTargetDate(daysFromNow = DEFAULT_DAYS_FROM_NOW) {
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + daysFromNow);
+  localStorage.setItem(TARGET_DATE_KEY, targetDate.toISOString());
+  return targetDate;
+}
+
+function calculateTimeLeft(targetDate) {
+  const now = Date.now();
   const distance = targetDate.getTime() - now;
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  if (distance < 0) {
+    return null;
+  }
 
-  // Update countdown display
+  return {
+    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+    seconds: Math.floor((distance % (1000 * 60)) / 1000),
+  };
+}
+
+function updateDisplay({ days, hours, minutes, seconds }) {
   document.getElementById("days").textContent = days
     .toString()
     .padStart(2, "0");
@@ -37,12 +45,21 @@ export function countdown() {
   document.getElementById("seconds").textContent = seconds
     .toString()
     .padStart(2, "0");
+}
 
-  if (distance < 0) {
-    // If countdown is over, reset target date
-    setTargetDate();
+function tick(targetDate) {
+  let timeLeft = calculateTimeLeft(targetDate);
+
+  if (!timeLeft) {
+    targetDate = setTargetDate();
+    timeLeft = calculateTimeLeft(targetDate);
   }
 
-  // Update countdown every second
-  setInterval(countdown, 1000);
+  updateDisplay(timeLeft);
+}
+
+export function countdownTimer() {
+  let targetDate = getTargetDate() || setTargetDate();
+  tick(targetDate); // Initial call to set display immediately
+  setInterval(tick, COUNTDOWN_INTERVAL, targetDate);
 }

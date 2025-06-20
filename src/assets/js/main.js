@@ -1,5 +1,5 @@
-import { countdown } from "./countdown.js";
-import { themeManager } from "./theme.js";
+import { countdownTimer } from "./countdown.js";
+import { themeController } from "./theme.js";
 
-countdown();
-themeManager();
+countdownTimer();
+themeController();
