@@ -232,7 +232,7 @@ body {
   color: var(--text-secondary);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 690px) {
   .logo {
     font-size: 2rem;
   }
