@@ -4,23 +4,24 @@
 
 <div align=center>
 
-🌍 **[Web Page](https://imfsiddiqui.github.io/nexus)** | 💻 **[Source Code](https://github.com/imfsiddiqui/nexus)** | 🚀 **[Releases](https://github.com/imfsiddiqui/nexus/releases)**
+🌍 **[Web Page](https://imfsiddiqui.github.io/nexus)** | 💻
+**[Source Code](https://github.com/imfsiddiqui/nexus)** | 🚀
+**[Releases](https://github.com/imfsiddiqui/nexus/releases)**
 
 </div>
 
 # 🚀 nexus
 
-<!-- TODO: Add repository description and image.
+A clean, responsive "Coming Soon" webpage template, perfect for announcing
+upcoming projects or products.
 
 <div align="center">
   <img
-    src="./readme/assets/{REPOSITORY_NAME}.png"
+    src="docs/pages/assets/images/banner-standard.png"
     style="border-radius: 10px"
-    alt="{REPOSITORY_NAME}"
+    alt="project banner"
   />
 </div>
-
--->
 
 ## 📚 Table of Contents
 
@@ -28,10 +29,10 @@
   - [📚 Table of Contents](#-table-of-contents)
   - [📌 About](#-about)
 
-<p align="right">(<a href="#top">🔝 back to top</a>)</p>
+<p align="right"><a href="#top">☝️</a></p>
 
 ## 📌 About
 
 <!-- TODO: Add a detailed about here. -->
 
-<p align="right">(<a href="#top">🔝 back to top</a>)</p>
+<p align="right"><a href="#top">☝️</a></p>
