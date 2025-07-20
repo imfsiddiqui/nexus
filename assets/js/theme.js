@@ -9,8 +9,8 @@
 
 // DOM Elements
 const themeToggle = document.getElementById("themeToggle"); // Button to toggle theme
-const themeIcon = document.getElementById("themeIcon");     // Icon element for theme indicator
-const body = document.body;                                 // Document body
+const themeIcon = document.getElementById("themeIcon"); // Icon element for theme indicator
+const body = document.body; // Document body
 
 // Theme and Icon Constants
 const THEMES = { LIGHT: "light", DARK: "dark" };
