@@ -62,6 +62,7 @@ words:
   - linejoin
   - localfolder
   - logformat
+  - logkey
   - mediamtx
   - mjpeg
   - monitory
@@ -78,6 +79,7 @@ words:
   - noqa
   - nosec
   - ntvs
+  - numpy
   - onefile
   - optparse
   - otherstream
@@ -117,6 +119,7 @@ words:
   - sniffio
   - snowballstemmer
   - sodipodi
+  - softprops
   - somepath
   - starlette
   - stdlib
