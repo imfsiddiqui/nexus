@@ -15,6 +15,7 @@ language: en
 # the list of words to be always considered correct.
 words:
   - abstractproperty
+  - almalinux
   - altgraph
   - analyse
   - analysed
@@ -23,7 +24,12 @@ words:
   - argparse
   - asctime
   - asdict
+  - autocapitalize
+  - autocorrect
   - autofocus
+  - backface
+  - bidi
+  - blackfriday
   - booleaness
   - bordercolor
   - borderopacity
@@ -33,22 +39,40 @@ words:
   - colorama
   - contextlib
   - contextmanager
+  - cpuguy
   - ctypes
+  - dasharray
+  - dashoffset
+  - davecgh
+  - depclean
   - deskcolor
+  - difflib
+  - dockerfile
+  - dockerfiles
   - docname
   - docstrings
   - dotenv
   - dotenvs
+  - dpkg
   - dshow
+  - eopkg
   - esbenp
+  - evenodd
   - faizan
   - fastapi
   - fflags
   - firstparty
   - foxundermoon
+  - gojsonpointer
+  - gojsonreference
+  - gojsonschema
+  - gopkg
+  - groupmode
+  - guix
   - httptools
   - idna
   - imfsiddiqui
+  - inconshreveable
   - inkscape
   - inlinevar
   - ipm
@@ -58,12 +82,15 @@ words:
   - keyint
   - levelname
   - libx
+  - linearrgb
   - linecap
   - linejoin
   - localfolder
   - logformat
   - logkey
+  - macports
   - mediamtx
+  - miterlimit
   - mjpeg
   - monitory
   - mpegts
@@ -73,6 +100,7 @@ words:
   - mypackage
   - mypy
   - namedview
+  - neue
   - njsproj
   - nobuffer
   - noout
@@ -80,17 +108,24 @@ words:
   - nosec
   - ntvs
   - numpy
+  - objx
   - onefile
+  - opkg
+  - optimizelegibility
   - optparse
   - otherstream
   - overgeneral
+  - overscroll
+  - pacman
   - pagecheckerboard
   - pagecolor
   - pageopacity
   - parseable
   - pathspec
   - pefile
+  - pkgs
   - platformdirs
+  - pmezard
   - pprof
   - preconfigured
   - probesize
@@ -104,35 +139,50 @@ words:
   - pylint
   - pylintrc
   - pywin
+  - qlist
   - rcfile
   - remux
+  - rgba
   - rgxs
+  - roboto
   - rtcp
   - rtmps
   - rtsp
   - rtsps
+  - russross
+  - segoe
   - setuptools
   - showgrid
   - showpageshadow
   - siddiqui
+  - silkeh
+  - slackpkg
   - smpte
   - sniffio
   - snowballstemmer
   - sodipodi
   - softprops
   - somepath
+  - srgb
   - starlette
   - stdlib
+  - stretchr
   - strftime
+  - tabindex
   - tamasfe
   - tcsh
   - thirdparty
   - timespan
+  - tmpl
   - toml
   - tomlkit
   - tspan
   - typealias
   - typevar
+  - unmarshal
+  - unmarshalled
+  - unmarshalling
+  - unmarshals
   - uvicorn
   - vcodec
   - venv
@@ -140,7 +190,10 @@ words:
   - webrtc
   - whep
   - wheps
+  - winget
+  - xbps
   - xdpi
+  - xeipuuv
   - xlink
   - ydpi
   - yuyv
