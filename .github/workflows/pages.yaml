@@ -7,7 +7,7 @@ on:
     branches:
       - main
     tags:
-      - 'v*'
+      - "v*"
 
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,8 +40,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload './src' directory as the artifact to be deployed
-          path: './src'
+          # Upload repository root directory as the artifact to be deployed
+          path: "./"
 
       - name: Deploy to GitHub Pages
         id: deployment

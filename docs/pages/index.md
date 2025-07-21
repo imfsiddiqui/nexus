@@ -1,12 +1,20 @@
+---
+layout: default
+---
+
 <!-- markdownlint-disable MD024 MD033 MD041 -->
 
 <a id="top"></a>
 
 <div align=center>
 
-🌍 **[Web Page](https://imfsiddiqui.github.io/nexus)** | 💻
-**[Source Code](https://github.com/imfsiddiqui/nexus)** | 🚀
-**[Releases](https://github.com/imfsiddiqui/nexus/releases)**
+<p>
+  🌍 <strong><a href="https://imfsiddiqui.github.io/{{ site.repository_name }}">Web Page</a></strong>
+  |
+  💻 <strong><a href="https://github.com/imfsiddiqui/{{ site.repository_name }}">Source Code</a></strong>
+  |
+  🚀 <strong><a href="https://github.com/imfsiddiqui/{{ site.repository_name }}/releases">Releases</a></strong>
+</p>
 
 </div>
 
@@ -17,7 +25,7 @@ upcoming projects or products.
 
 <div align="center">
   <img
-    src="docs/pages/assets/images/banner-standard.png"
+    src="./assets/images/banner-standard.png"
     style="border-radius: 10px"
     alt="project banner"
   />

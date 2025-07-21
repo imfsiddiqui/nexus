@@ -1,0 +1,12 @@
+theme: jekyll-theme-cayman
+favicon_emoji: 🚀
+repository_name: nexus
+title: nexus
+description:
+  A clean, responsive "Coming Soon" webpage template, perfect for announcing
+  upcoming projects or products.
+show_downloads: true
+collections:
+  pages:
+    output: true # Generates HTML files for each file
+    permalink: /:path/ # URL structure for collection items

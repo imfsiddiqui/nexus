@@ -1,4 +1,7 @@
-# EditorConfig is awesome: https://EditorConfig.org
+# ------------------------------------------------------------------------------
+# EditorConfig configuration file
+# https://editorconfig.org
+# ------------------------------------------------------------------------------
 
 # Top-most EditorConfig file
 root = true
@@ -7,23 +10,64 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_style = space
 indent_size = 4
-trim_trailing_whitespace = true
+indent_style = space
 insert_final_newline = true
+trim_trailing_whitespace = true
 
-# HTML, CSS, JavaScript, JSON, and TypeScript
-[*.{html,css,js,jsx,json,ts,tsx}]
+# CSS
+[*.css]
+indent_size = 2
+
+# Dockerfile
+[Dockerfile]
+indent_size = 2
+
+# Go
+[*.go]
+indent_style = tab
+
+# HTML
+[*.html]
+indent_size = 2
+
+# JavaScript
+[*.{js,mjs,cjs}]
+indent_size = 2
+
+# JSON
+[*.json]
+indent_size = 2
+
+# JSONC
+[*.jsonc]
 indent_size = 2
 
 # Markdown
-[*.md]
+[*.{md,markdown}]
+indent_size = 2
 trim_trailing_whitespace = false
 
-# Python
-[*.py]
-indent_size = 4
+# Shell Scripts
+[*.{sh,bash,zsh,fish,dash,tcsh,csh,ksh}]
+indent_size = 2
+
+# SVG
+[*.svg]
+indent_size = 2
+
+# TOML
+[*.toml]
+indent_size = 2
+
+# Visual Studio Code (VS Code) Workspace
+[*.code-workspace]
+indent_size = 2
+
+# XML
+[*.xml]
+indent_size = 2
 
 # YAML
-[*.yml]
+[*.{yaml,yml}]
 indent_size = 2
