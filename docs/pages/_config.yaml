@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
-favicon_emoji: 🚀
 repository_name: nexus
 title: nexus
+emoji: 🚀
 description:
   A clean, responsive "Coming Soon" webpage template, perfect for announcing
   upcoming projects or products.
