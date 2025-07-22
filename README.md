@@ -203,14 +203,13 @@ To use this template for your own project:
   [download the ZIP](https://github.com/imfsiddiqui/nexus/archive/refs/heads/main.zip).
 - **Open the Project**: Open the project folder in your preferred code editor.
 - **Customize Content**:
-  - Edit [`src/index.html`](src/index.html) to update the title, description,
-    logo, and social links.
-  - Replace images in [`src/assets/images/`](src/assets/images/) as needed.
+  - Edit `src/index.html` to update the title, description, logo, and social
+    links.
+  - Replace images in `src/assets/images/` as needed.
   - The countdown timer is set to 30 days by default. To change this, update
-    `DEFAULT_DAYS_FROM_NOW` in
-    [`src/assets/js/countdown.js`](src/assets/js/countdown.js).
-- **Preview Locally**: Open [`src/index.html`](src/index.html) directly in your
-  browser to preview the page.
+    `DEFAULT_DAYS_FROM_NOW` in `src/assets/js/countdown.js`.
+- **Preview Locally**: Open `src/index.html` directly in your browser to preview
+  the page.
 - **Deploy**: Upload the contents of the `src/` directory to your web server or
   static hosting (e.g., GitHub Pages, Netlify, Vercel).
 
