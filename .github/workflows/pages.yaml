@@ -40,8 +40,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload repository root directory as the artifact to be deployed
-          path: "./"
+          # Upload directory as the artifact to be deployed
+          path: "./src"
 
       - name: Deploy to GitHub Pages
         id: deployment
