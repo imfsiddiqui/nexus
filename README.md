@@ -154,7 +154,7 @@ cross-browser compatibility, and accessibility.
   <img
     src="docs/pages/assets/images/report-lighthouse-mobile.png"
     style="border-radius: 10px"
-    alt="report lighthouse desktop"
+    alt="report lighthouse mobile"
   />
   <figcaption>
     Report Lighthouse Mobile

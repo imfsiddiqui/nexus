@@ -162,7 +162,7 @@ cross-browser compatibility, and accessibility.
   <img
     src="{{ site.baseurl }}/assets/images/report-lighthouse-mobile.png"
     style="border-radius: 10px"
-    alt="report lighthouse desktop"
+    alt="report lighthouse mobile"
   />
   <figcaption>
     Report Lighthouse Mobile
