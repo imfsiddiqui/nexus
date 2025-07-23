@@ -208,8 +208,23 @@ To use this template for your own project:
   - Replace images in `src/assets/images/` as needed.
   - The countdown timer is set to 30 days by default. To change this, update
     `DEFAULT_DAYS_FROM_NOW` in `src/assets/js/countdown.js`.
-- **Preview Locally**: Open `src/index.html` directly in your browser to preview
-  the page.
+- **Preview Locally**: Go to the `src/` directory from your terminal and run a
+  local server to preview the page. You can use tools like:
+
+  - **Node.js**:
+
+    ```console
+    npx http-server -p 5000
+    ```
+
+  - **Python**:
+
+    ```console
+    python -m http.server 5000
+    ```
+
+  Visit `http://localhost:5000` in your browser to see the page.
+
 - **Deploy**: Upload the contents of the `src/` directory to your web server or
   static hosting (e.g., GitHub Pages, Netlify, Vercel).
 
