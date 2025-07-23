@@ -18,7 +18,7 @@ upcoming projects or products.
 <div align="center">
   <img
     src="docs/pages/assets/images/banner-standard.png"
-    style="border-radius: 10px"
+    style="border-radius: 10px; border: 1px #cccccc solid;"
     alt="project banner"
   />
 </div>
@@ -119,7 +119,7 @@ cross-browser compatibility, and accessibility.
 <figure>
   <img
     src="docs/pages/assets/images/screenshot-dark-mode.png"
-    style="border-radius: 10px"
+    style="border-radius: 10px; border: 1px #cccccc solid;"
     alt="screenshot dark mode"
   />
   <figcaption>
@@ -138,7 +138,7 @@ cross-browser compatibility, and accessibility.
 <figure>
   <img
     src="docs/pages/assets/images/report-lighthouse-desktop.png"
-    style="border-radius: 10px"
+    style="border-radius: 10px; border: 1px #cccccc solid;"
     alt="report lighthouse desktop"
   />
   <figcaption>
@@ -153,7 +153,7 @@ cross-browser compatibility, and accessibility.
 <figure>
   <img
     src="docs/pages/assets/images/report-lighthouse-mobile.png"
-    style="border-radius: 10px"
+    style="border-radius: 10px; border: 1px #cccccc solid;"
     alt="report lighthouse mobile"
   />
   <figcaption>
