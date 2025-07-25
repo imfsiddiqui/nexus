@@ -37,7 +37,7 @@ upcoming projects or products.
   - [📚 Table of Contents](#-table-of-contents)
   - [📌 About](#-about)
   - [🧠 Philosophy](#-philosophy)
-  - [✨ Features](#-features)
+  - [🔑 Key Features](#-key-features)
   - [🛠️ Technologies Used](#️-technologies-used)
   - [🖼️ Screenshots](#️-screenshots)
     - [☀️ Light Mode](#️-light-mode)
@@ -73,7 +73,7 @@ cross-browser compatibility, and accessibility.
 
 <p align="right"><a href="#top">☝️</a></p>
 
-## ✨ Features
+## 🔑 Key Features
 
 - **Modern Aesthetics**: Clean and professional design that enhances user
   engagement.
